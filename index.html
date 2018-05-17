@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MusicQuips</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/myStyles.css">
+</head>
+<body>
+	<div id="topBar">
+		<button class=""></button>
+		<div class="topBarItem" id="topBarLogo">
+			<img src="images/logo.jpg" width="100%" height="100%">
+		</div>
+		<div class="topBarItem" id="topButton">
+			<a href="index.html">
+				Home
+			</a>
+		</div>
+		<div class="topBarItem" id="topButton">
+			<a href="about.html">
+				About
+			</a>
+		</div>
+		<div class="topBarItem" id="topButton">
+			<a href="request.html">
+				Request
+			</a>
+		</div>
+	</div>
+
+	<div class="mainDisplay">
+		<div class="title">
+			Welcome to MusicQuips. 
+		</div> 
+		<div class="picker">
+			<div class="pickerTitle">
+				Today's Song
+			</div>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/watch?v=PUdyuKaGQd4" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="todaySong"></div>
+			<div id="todayArtist"></div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+  				<input type="radio" name="today" value="one">Awful<br>
+  				<input type="radio" name="today" value="two">Bad<br>
+  				<input type="radio" name="today" value="three">Okay<br>
+  				<input type="radio" name="today" value="four">Great<br>
+  				<input type="radio" name="today" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+		<br><br>
+		<div class="title">
+			Discover More Music!
+		</div>
+
+		<div id="menuBar">
+			<div class="menuItem" id="pop">
+				<input type="button" value="Pop" id="popClick" onclick="doPopClick()">
+			</div>
+			<div class="menuItem" id="rap">
+				<input type="button" value="Rap/Hip Hop" id="rapClick" onclick="doRapClick()">
+			</div>
+			<div class="menuItem" id="country">
+				<input type="button" value="Country" id="countryClick" onclick="doCountryClick()">
+			</div>
+			<div class="menuItem" id="alternative">
+				<input type="button" value="Alternative" id="alternativeClick" onclick="doAlternativeClick()">
+			</div>
+			<div class="menuItem" id="more">
+				<input type="button" value="More" id="moreClick" onclick="doMoreClick()">
+			</div>
+		</div>
+
+		<div id="musicDisplay">
+			<div id="popDisplay">
+				<div class="pickerTitle" id="popTitle">
+				Discover Pop Songs
+			</div>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/cIriwVhRPVA" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Strangers</div>
+			<div id="normalArtist">Artist: Sigrid</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/dMK_npDG12Q" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Green Light</div>
+			<div id="normalArtist">Artist: Lorde</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/v-Dur3uXXCQ" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Praying</div>
+			<div id="normalArtist">Artist: Kesha</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/wxLUj1Mrars" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Figures</div>
+			<div id="normalArtist">Artist: Jessie Reyez</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="title">
+				More Coming Soon!
+			</div>
+		</div>
+		
+			<div id="rapDisplay">
+				<div class="pickerTitle" id="popTitle">
+				Discover Rap Songs
+			</div>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/tvTRZJ-4EyI" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: HUMBLE.</div>
+			<div id="normalArtist">Artist: Kendrick Lamar</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/3j8ecF8Wt4E" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Carolina</div>
+			<div id="normalArtist">Artist: Aminé</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/aZla1ttZHaw" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Freaky Friday</div>
+			<div id="normalArtist">Artist: Lil Dicky ft. Chris Brown</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/fGqdIPer-ms" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Walk It Talk It</div>
+			<div id="normalArtist">Artist: Migos ft. Drake</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="title">
+				More Coming Soon!
+			</div>
+			</div>
+
+			<div id="countryDisplay">
+				<div class="pickerTitle" id="popTitle">
+				Discover Country Songs
+			</div>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/p_IwENcMPOA" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Marry Me</div>
+			<div id="normalArtist">Artist: Thomas Rhett</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/c4qgqNS_20s" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Tequila</div>
+			<div id="normalArtist">Artist: Dan + Shay</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/XvtXgNtYFMs" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: I Want Crazy</div>
+			<div id="normalArtist">Artist: Hunter Hayes</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/hvKyBcCDOB4" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Wagon Wheel</div>
+			<div id="normalArtist">Artist: Darius Rucker</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="title">
+				More Coming Soon!
+			</div>
+			</div>
+
+			<div id="alternativeDisplay">
+				<div class="pickerTitle" id="popTitle">
+				Discover Alt. Songs
+			</div>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/CQdM70ipSkE" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Blind</div>
+			<div id="normalArtist">Artist: Brother Sundance</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/jVXauWq9Hwg" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Say Amen (Saturday Night)</div>
+			<div id="normalArtist">Artist: Panic at the Disco!</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/Yo0RvZZz_ds" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Quarter Past Midnight</div>
+			<div id="normalArtist">Artist: Bastille</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/5GHXEGz3PJg" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Hunger</div>
+			<div id="normalArtist">Artist: Florence and the Machine</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="title">
+				More Coming Soon!
+			</div>
+			</div>
+
+			<div id="moreDisplay">
+				<div class="pickerTitle" id="popTitle">
+				Discover More Songs
+			</div>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/U00JRRATURY" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Pine & Ginger</div>
+			<div id="normalArtist">Artist: Amindi K. Fro$t, Tessellated, Valleyz</div>
+			<div id="normalGenre">Genre: Reggae</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/ALZHF5UqnU4" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Alone</div>
+			<div id="normalArtist">Artist: Marshmello</div>
+			<div id="normalGenre">Genre: Electronic</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/Io0fBr1XBUA" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: Don't Let Me Down</div>
+			<div id="normalArtist">Artist: The Chainsmokers</div>
+			<div id="normalGenre">Genre: Dance</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="video">
+				<iframe id="todayIframe" height="100%" width="95.5%" src="https://www.youtube.com/embed/MBdVXkSdhwU" frameborder="0">Sorry you're browser does not support iFrame
+				</iframe>
+			</div>
+			<div id="normalSong">Song: DNA</div>
+			<div id="normalArtist">Artist: BTS</div>
+			<div id="normalGenre">Genre: K-Pop</div>
+			<div class="pickerTitle">
+				Rate
+			</div>
+			<div id="form">
+				<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Song Title:
+				<input type="title" name="song" type="text"><br>
+  				<input type="radio" name="pop" value="one">Awful<br>
+  				<input type="radio" name="pop" value="two">Bad<br>
+  				<input type="radio" name="pop" value="three">Okay<br>
+  				<input type="radio" name="pop" value="four">Great<br>
+  				<input type="radio" name="pop" value="five">Amazing<br>
+  				<input type="submit" value="Submit">
+				</form>
+			</div>
+			<br>
+			<div class="title">
+				More Coming Soon!
+			</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	
+
+</body>
+</html>

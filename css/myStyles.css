@@ -1,0 +1,215 @@
+body{
+	padding: 0;
+	background-color: #DCDCDD;
+	margin: 0;
+}
+
+#topBar{
+	width: 100%;
+	background-color: #46494C;
+	height: 70px;
+	padding: 0;
+	margin: 0;
+}
+
+.topBarItem{
+	float: left;
+	height: 70px;
+	padding: 0;
+	margin: 0;
+}
+
+#topBarLogo{
+	width: 5%;
+	padding-left: 10%;
+}
+
+#topButton {
+	width: 12%;
+	font-family: 'Black Han Sans', sans-serif;
+	color: #FFFFFF;
+	font-size: 2em;
+	padding-top: 1%;
+	text-align: center;
+	border-right: 2px solid #FFFFFF;
+}
+
+#aboutMain {
+	height: 1200px;
+}
+
+#requestMain {
+	height: 600px;
+}
+
+.mainDisplay{
+	background-color: #FFFFFF;
+	width: 75%;
+	margin-right: 10%;
+	margin-left: 10%;
+	height: 6050px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	padding: 2.5%;
+}
+
+.title{
+	text-align: center;
+	font-size: 2em;
+	color: #FEBA01;
+	font-family: 'Black Han Sans', sans-serif;
+}
+
+.description {
+	text-align: left;
+	padding: 2%;
+	font-size: 1em;
+}
+
+.picker{
+	margin-top: 2.5%;
+	height: 1130px;
+	overflow: auto;
+	background-color: #F4F4F4;
+}
+
+.pickerTitle{
+	margin: 1%;
+	height: 40px;
+	width: 200px;
+	background-color: #FEBA01;
+	color: white;
+	padding-top: 1%;
+	text-align: center;
+}
+
+#popTitle {
+	width: 300px;
+}
+
+#todayIframe {
+	padding: 2%;
+	height: 600px;
+}
+
+#todaySong{
+	font-family: 'Montserrat', sans-serif;
+	color: #46494C;
+	padding: 1%;
+}
+
+#todayArtist {
+	font-family: 'Montserrat', sans-serif;
+	color: #46494C;
+	padding: 1%;
+}
+
+#normalSong{
+	font-family: 'Montserrat', sans-serif;
+	color: #46494C;
+	padding: 1%;
+}
+
+#normalArtist {
+	font-family: 'Montserrat', sans-serif;
+	color: #46494C;
+	padding: 1%;
+}	
+
+#normalGenre {
+	font-family: 'Montserrat', sans-serif;
+	color: #46494C;
+	padding: 1%;
+}
+
+#form {
+	padding: 2%;
+}
+
+#menuBar {
+	width: 90%;
+	height: 70px;
+	margin: 5%;
+}
+
+#pop {
+	border-left-width: 2px;
+}
+
+#popClick {
+	border: none;
+	background-color: white;
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#rapClick {
+	border: none;
+	background-color: white;
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#countryClick {
+	border: none;
+	background-color: white;
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#alternativeClick {
+	border: none;
+	background-color: white;
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#moreClick {
+	border: none;
+	background-color: white;
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#more {
+	border-right-width: 2px;
+}
+
+.menuItem {
+	float: left;
+	width: 17.7%; 
+	border: 2px solid black;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	text-align: center;
+	padding: 1%;
+}
+
+#musicDisplay {
+	background-color: #F4F4F4;
+	height: 4500px;
+	margin-right: 4%;
+	margin-left: 4%;
+	padding: 1%;
+}
+
+a:link{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:hover {
+	color: #FFFFFF;
+	background-color: #C5C3C6;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a: active{
+	text-decoration: none;
+	color: #FFFFFF;
+}

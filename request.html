@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MusicQuips</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/myStyles.css">
+</head>
+<body>
+	<div id="topBar">
+		<div class="topBarItem" id="topBarLogo">
+			<img src="images/logo.jpg" width="100%" height="100%">
+		</div>
+		<div class="topBarItem" id="topButton">
+			<a href="index.html">
+				Home
+			</a>
+		</div>
+		<div class="topBarItem" id="topButton">
+			<a href="about.html">
+				About
+			</a>
+		</div>
+		<div class="topBarItem" id="topButton">
+			<a href="request.html">
+				Request
+			</a>
+		</div>
+	</div>
+
+	<div class="mainDisplay" id="requestMain">
+		<div class="title">
+			Request Songs
+		</div> 
+		<div class="description">
+			Any songs you want on MusicQuips? Let us know below! (Don't worry your name and email is just so we can let you know if the song goes live!)
+		</div>
+		<br>
+		<div id="form">
+			<form method="POST" action="https://formspree.io/fleurkp2@gmail.com">
+				Name:  <input type="text" name="name"> <br><br>
+    			Email:  <input type="email" name="_replyto"> <br><br>
+    			Song Title:  <input type="text" name="song"> <br><br>
+    			Artist:  <input type="text" name="artist"> <br><br>
+    			<input type="submit" value="Send">
+			</form>
+			</div>
+
+	</div>
+	
+			
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
